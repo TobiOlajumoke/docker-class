@@ -62,8 +62,12 @@ When you use Docker, you are creating and using images, containers, networks, vo
 An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.
 
 A short demo
+Create a new React app using create-react-app by running the following command:
 
-run:
+
+```sh
+npx create-react-app frontend
+```
 
 ```sh
 docker 
