@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install production dependencies
 RUN npm ci --only=production
 
+# Copy the entire application code, including the public directory
+COPY . .
+
 # Stage 2: Create the production image
 FROM node:alpine3.17
 
